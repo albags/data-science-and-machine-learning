@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="fixed acidity <= -0.005\ngini = 0.371\nsamples = 6497\nvalue = [4898, 1599]\nclass = quality_1", fillcolor="#edaa7a"] ;
+1 [label="fixed acidity <= -0.625\ngini = 0.5\nsamples = 3229\nvalue = [1640, 1589]\nclass = quality_1", fillcolor="#fefbf9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="fixed acidity <= -0.75\ngini = 0.32\nsamples = 2050\nvalue = [1640, 410]\nclass = quality_1", fillcolor="#eca06a"] ;
+1 -> 2 ;
+3 [label="gini = 0.037\nsamples = 904\nvalue = [887, 17]\nclass = quality_1", fillcolor="#e5833d"] ;
+2 -> 3 ;
+4 [label="gini = 0.451\nsamples = 1146\nvalue = [753, 393]\nclass = quality_1", fillcolor="#f3c3a0"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1179\nvalue = [0, 1179]\nclass = quality_2", fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label="fixed acidity <= 0.246\ngini = 0.006\nsamples = 3268\nvalue = [3258, 10]\nclass = quality_1", fillcolor="#e5813a"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="fixed acidity <= 0.127\ngini = 0.023\nsamples = 866\nvalue = [856, 10]\nclass = quality_1", fillcolor="#e5823b"] ;
+6 -> 7 ;
+8 [label="gini = 0.012\nsamples = 861\nvalue = [856, 5]\nclass = quality_1", fillcolor="#e5823a"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = quality_2", fillcolor="#399de5"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 2402\nvalue = [2402, 0]\nclass = quality_1", fillcolor="#e58139"] ;
+6 -> 10 ;
+}
