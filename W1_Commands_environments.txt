@@ -1,0 +1,20 @@
+COMMANDS to work with  environments
+
+* Create a new environment: conda create --name NAME_OF_YOUR_ENV / conda create -n NAME_OF_YOUR_ENV
+	- With a specific version of Python: conda create --name NAME_OF_YOUR_ENV python=3.6
+	- with a specific version of a library:  conda create --name NAME_OF_YOUR_ENV scipy=0.15.0
+	
+* Remove an environment: conda remove --name NAME_To_REMOVE --all
+
+* Access to your environment: conda activate NAME_OF_YOUR_ENV
+
+* Viewing a list of your environments: conda env list
+ 
+* List of the packages that you have: conda list / pip list / pip freeze 
+
+* Save the requirements into a txt file: pip freeze > NameRequirements.txt
+
+* Load and install the packages from a previous file: 
+pip install -r NameRequirements.txt
+conda install NameRequirements.txt
+
